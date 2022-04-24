@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
   },
   logoText: {
     width: 85,
+    fontWeight: 'bold',
     marginLeft: 10,
   },
   carouselContainer: {

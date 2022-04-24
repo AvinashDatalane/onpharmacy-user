@@ -1,10 +1,6 @@
 import React from 'react';
-import {
-  createStackNavigator,
-  createAppContainer,
-} from '@react-navigation/stack';
+import {createStackNavigator} from '@react-navigation/stack';
 import BottomTabNav from './BottomTabNav';
-import {Text, View} from 'react-native';
 
 const Stack = createStackNavigator();
 
