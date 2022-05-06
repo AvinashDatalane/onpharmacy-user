@@ -9,4 +9,24 @@ export const homePage = {
     'https://image.shutterstock.com/image-vector/pharmacy-logo-medicine-green-cross-260nw-431794666.jpg',
     'https://thumbs.dreamstime.com/z/pharmacy-vector-symbol-blue-cross-pharmacist-pharma-store-doctor-medicine-modern-design-vector-logo-pharmacy-187005628.jpg',
   ],
+  moreProducts: [
+    {
+      id:1,
+      image:'https://imgscf.slidemembers.com/docs/1/1/259/pharmaceutical_industry_interactive_ppt_258187.jpg',
+      title: 'Product Title',
+      description:'Product Description'
+    },
+    {
+      id:2,
+      image:'https://imgscf.slidemembers.com/docs/1/1/259/pharmaceutical_industry_interactive_ppt_258187.jpg',
+      title: 'Product Title',
+      description:'Product Description'
+    },
+    {
+      id:3,
+      image:'https://imgscf.slidemembers.com/docs/1/1/259/pharmaceutical_industry_interactive_ppt_258187.jpg',
+      title: 'Product Title',
+      description:'Product Description'
+    },
+  ]
 };

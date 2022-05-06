@@ -2,6 +2,8 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {View, Text, Image} from 'react-native';
 import Home from '../Screens/Home/Home';
+import SearchScreen from '../Screens/SearchScreen';
+import OrderScreen from '../Screens/OrderScreen'
 import icons from '../Assets/Icons/icons';
 import SearchSVG from '../Assets/Icons/BottomTab/search.svg';
 import HomeSVG from '../Assets/Icons/BottomTab/home.svg';
@@ -11,7 +13,7 @@ import OrderSVG from '../Assets/Icons/BottomTab/order.svg';
 
 const Tab = createBottomTabNavigator();
 
-const screen = () => {
+const Screen = () => {
   return (
     <View style={{flex: 1, backgroundColor: 'blue'}}>
       <Text>here</Text>
@@ -45,7 +47,7 @@ const BottomTabNav = () => {
         }}
       />
       <Tab.Screen
-        component={screen}
+        component={SearchScreen}
         name="Search"
         options={{
           headerShown: false,
@@ -60,7 +62,7 @@ const BottomTabNav = () => {
         }}
       />
       <Tab.Screen
-        component={screen}
+        component={Screen}
         name="Store"
         options={{
           headerShown: false,
@@ -75,7 +77,7 @@ const BottomTabNav = () => {
         }}
       />
       <Tab.Screen
-        component={screen}
+        component={OrderScreen}
         name="order History"
         options={{
           headerShown: false,
@@ -90,7 +92,7 @@ const BottomTabNav = () => {
         }}
       />
       <Tab.Screen
-        component={screen}
+        component={Screen}
         name="Profile"
         options={{
           headerShown: false,

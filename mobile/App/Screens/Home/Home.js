@@ -65,8 +65,11 @@ const Home = (props: Props) => {
           <Text style={styles.headerText}>ALL STORES</Text>
           <Text style={styles.headerText}>View All</Text>
         </View>
+        <TouchableOpacity onPress={() => props.navigation.navigate('ProductDetails')}>
+          <Text style={{color:'black'}}>Go to products page</Text>
+        </TouchableOpacity>
         <FlatList
-          data={homePage.pharamacyImages}
+          data={homePage.pharmacyImages}
           horizontal
           renderItem={store}
         />

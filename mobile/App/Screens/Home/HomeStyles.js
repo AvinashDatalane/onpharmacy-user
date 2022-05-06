@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
     width: 85,
     fontWeight: 'bold',
     marginLeft: 10,
+    color:'black'
   },
   carouselContainer: {
     width: '100%',
