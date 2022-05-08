@@ -10,6 +10,9 @@ const back = require('./Back.png');
 const apollo = require('./Apollo.png')
 const searchPurple = require('./search_purple.png')
 const locationPurple = require('./Maps_Purple.png')
+const circleCheck= require('./circleCheck.png')
+const dhl= require('./DHL.png')
+
 const icons = {
   onePhamacy,
   cart,
@@ -21,6 +24,8 @@ const icons = {
   apollo,
   searchPurple,
   locationPurple,
+  circleCheck,
+  dhl,
 };
 
 export default icons;
