@@ -6,7 +6,10 @@ const search = require('./search.png');
 const sort = require('./sort.png');
 const location = require('./Maps.png');
 const category = require('./Category.png');
-
+const back = require('./Back.png');
+const apollo = require('./Apollo.png')
+const searchPurple = require('./search_purple.png')
+const locationPurple = require('./Maps_Purple.png')
 const icons = {
   onePhamacy,
   cart,
@@ -14,6 +17,10 @@ const icons = {
   sort,
   location,
   category,
+  back,
+  apollo,
+  searchPurple,
+  locationPurple,
 };
 
 export default icons;
