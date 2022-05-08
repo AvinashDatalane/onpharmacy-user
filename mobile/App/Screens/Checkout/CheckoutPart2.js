@@ -29,9 +29,25 @@ const CheckoutPart2 = (props: Props) => {
             <Text style={styles.headerText}>Payment Option</Text>
         </View>
       </View>
-      <ScrollView style={styles.form}>
-        
-      </ScrollView>
+        <View style={styles.form}>
+            <View style={styles.titleContainer}>
+                <Text style={styles.title}>Delivery Method</Text>
+                <Text style={styles.subtitle}>Please choose a delivery method</Text>
+            </View>
+            <View style={styles.optionContainer}>
+                <Image source={icons.circleCheck} />
+                <Text style={styles.company}>FedEx</Text>
+                <Text style={styles.price}>+32 USD</Text>
+                <Text style={styles.text}>Additional price</Text>
+            </View>
+            <View style={styles.option2Container}>
+                <Image source={icons.circleCheck} />
+                <Text style={styles.company}>DHL</Text>
+                <Text style={styles.price}>+15 USD</Text>
+                <Text style={styles.text}>Additional price</Text>
+                <Image source={icons.dhl} style={styles.circleCheck}/>
+            </View>
+        </View>
       <View style={styles.footerContainer}>
         <TouchableOpacity>
             <View style={styles.footer}>
