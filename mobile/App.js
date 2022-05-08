@@ -7,7 +7,8 @@
  */
 
 import React from 'react';
-import type {Node} from 'react';
+
+import type { Node } from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -17,7 +18,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 import {
   Colors,
   DebugInstructions,
@@ -33,7 +34,6 @@ const App: () => Node = () => {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
-
   return (
     <NavigationContainer>
       <Router />
