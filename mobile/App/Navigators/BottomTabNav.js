@@ -2,6 +2,8 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {View, Text, Image} from 'react-native';
 import Home from '../Screens/Home/Home';
+import CheckoutPart1 from '../Screens/Checkout/CheckoutPart1';
+import CheckoutPart2 from '../Screens/Checkout/CheckoutPart2';
 import icons from '../Assets/Icons/icons';
 import SearchSVG from '../Assets/Icons/BottomTab/search.svg';
 import HomeSVG from '../Assets/Icons/BottomTab/home.svg';
@@ -75,7 +77,7 @@ const BottomTabNav = () => {
         }}
       />
       <Tab.Screen
-        component={screen}
+        component={CheckoutPart1}
         name="order History"
         options={{
           headerShown: false,
@@ -90,7 +92,7 @@ const BottomTabNav = () => {
         }}
       />
       <Tab.Screen
-        component={screen}
+        component={CheckoutPart2}
         name="Profile"
         options={{
           headerShown: false,
