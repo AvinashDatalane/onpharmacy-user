@@ -39,13 +39,14 @@ const CheckoutPart2 = (props: Props) => {
                 <Text style={styles.company}>FedEx</Text>
                 <Text style={styles.price}>+32 USD</Text>
                 <Text style={styles.text}>Additional price</Text>
+                <Image source={icons.fedEx} style={styles.companyIcon}/>
             </View>
             <View style={styles.option2Container}>
                 <Image source={icons.circleCheck} />
                 <Text style={styles.company}>DHL</Text>
                 <Text style={styles.price}>+15 USD</Text>
                 <Text style={styles.text}>Additional price</Text>
-                <Image source={icons.dhl} style={styles.circleCheck}/>
+                <Image source={icons.dhl} style={styles.companyIcon}/>
             </View>
         </View>
       <View style={styles.footerContainer}>

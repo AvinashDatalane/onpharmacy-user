@@ -30,7 +30,9 @@ const CheckoutPart1 = (props: Props) => {
         </View>
       </View>
       <ScrollView>
-        <DeliveryDetailsForm />
+        <View style={styles.form}>
+          <DeliveryDetailsForm />
+        </View>
       </ScrollView>
       <View style={styles.footerContainer}>
         <TouchableOpacity>

@@ -1,13 +1,14 @@
 import React from 'react';
 import { StyleSheet, Button, TextInput, View, Text } from 'react-native';
 import styles from './CheckoutPart1Styles';
+import icons from '../../Assets/Icons/icons';
 import { Formik } from 'formik';
 
 export default function DeliveryDetailsForm() {
 
   return (
     
-    <View style={styles.form}>
+    
       <Formik
         initialValues={{ FirstName: '', LastName: '', EmailID: '', Phone: '', Address: '', Town: '', State: '', Zip: '' }}
         onSubmit={(values) => {
@@ -102,12 +103,13 @@ export default function DeliveryDetailsForm() {
                 <Text style={styles.formtext}></Text>
             </View>
             <View style={styles.delivercheck}>
+              <View style={styles.squareCheck}></View>
               <Text style={styles.deliverchecktext}> Ship to Different address?</Text>
             </View>
           </View>
         )}
       </Formik>
-    </View>
+    
     
   );
 }

@@ -4,6 +4,8 @@ import {View, Text, Image} from 'react-native';
 import Home from '../Screens/Home/Home';
 import CheckoutPart1 from '../Screens/Checkout/CheckoutPart1';
 import CheckoutPart2 from '../Screens/Checkout/CheckoutPart2';
+import CheckoutPart3 from '../Screens/Checkout/CheckoutPart3';
+import CheckoutPart4 from '../Screens/Checkout/CheckoutPart4';
 import icons from '../Assets/Icons/icons';
 import SearchSVG from '../Assets/Icons/BottomTab/search.svg';
 import HomeSVG from '../Assets/Icons/BottomTab/home.svg';
@@ -47,7 +49,7 @@ const BottomTabNav = () => {
         }}
       />
       <Tab.Screen
-        component={screen}
+        component={CheckoutPart3}
         name="Search"
         options={{
           headerShown: false,
@@ -62,7 +64,7 @@ const BottomTabNav = () => {
         }}
       />
       <Tab.Screen
-        component={screen}
+        component={CheckoutPart4}
         name="Store"
         options={{
           headerShown: false,

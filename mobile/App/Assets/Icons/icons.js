@@ -12,6 +12,10 @@ const searchPurple = require('./search_purple.png')
 const locationPurple = require('./Maps_Purple.png')
 const circleCheck= require('./circleCheck.png')
 const dhl= require('./DHL.png')
+const squareCheck= require('./emptySquare.png')
+const creditCard= require('./cards.png')
+const tick= require('./tick.png')
+const fedEx= require('./FedEx.png')
 
 const icons = {
   onePhamacy,
@@ -26,6 +30,10 @@ const icons = {
   locationPurple,
   circleCheck,
   dhl,
+  squareCheck,
+  creditCard,
+  tick,
+  fedEx,
 };
 
 export default icons;
