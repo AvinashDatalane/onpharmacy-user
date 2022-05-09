@@ -10,6 +10,7 @@ import HomeSVG from '../Assets/Icons/BottomTab/home.svg';
 import StoreSVG from '../Assets/Icons/BottomTab/store.svg';
 import ProfileSVG from '../Assets/Icons/BottomTab/profile.svg';
 import OrderSVG from '../Assets/Icons/BottomTab/order.svg';
+import StoreScreen from '../Screens/StoreScreen'
 
 const Tab = createBottomTabNavigator();
 
@@ -62,7 +63,7 @@ const BottomTabNav = () => {
         }}
       />
       <Tab.Screen
-        component={Screen}
+        component={StoreScreen}
         name="Store"
         options={{
           headerShown: false,
