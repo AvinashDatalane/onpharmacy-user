@@ -2,15 +2,15 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {View, Text, Image} from 'react-native';
 import Home from '../Screens/Home/Home';
-import SearchScreen from '../Screens/SearchScreen';
-import OrderScreen from '../Screens/OrderScreen'
+import SearchScreen from '../Screens/Search/SearchScreen';
+import OrderScreen from '../Screens/Order/OrderScreen'
 import icons from '../Assets/Icons/icons';
 import SearchSVG from '../Assets/Icons/BottomTab/search.svg';
 import HomeSVG from '../Assets/Icons/BottomTab/home.svg';
 import StoreSVG from '../Assets/Icons/BottomTab/store.svg';
 import ProfileSVG from '../Assets/Icons/BottomTab/profile.svg';
 import OrderSVG from '../Assets/Icons/BottomTab/order.svg';
-import StoreScreen from '../Screens/StoreScreen'
+import StoreScreen from '../Screens/Store/StoreScreen'
 
 const Tab = createBottomTabNavigator();
 

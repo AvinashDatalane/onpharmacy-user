@@ -2,8 +2,8 @@ import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import BottomTabNav from './BottomTabNav';
 import ProductDetails from '../Screens/ProductDetails';
-import WishlistScreen from '../Screens/WishlistScreen';
-import CartScreen from '../Screens/CartScreen'
+import WishlistScreen from '../Screens/Wishlist/WishlistScreen';
+import CartScreen from '../Screens/Cart/CartScreen'
 
 const Stack = createStackNavigator();
 
