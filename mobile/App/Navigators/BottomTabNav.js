@@ -50,7 +50,7 @@ const BottomTabNav = () => {
         }}
       />
       <Tab.Screen
-        component={Offer}
+        component={screen}
         name="Search"
         options={{
           headerShown: false,
@@ -65,7 +65,7 @@ const BottomTabNav = () => {
         }}
       />
       <Tab.Screen
-        component={CheckoutPart4}
+        component={screen}
         name="Store"
         options={{
           headerShown: false,
@@ -80,7 +80,7 @@ const BottomTabNav = () => {
         }}
       />
       <Tab.Screen
-        component={CheckoutPart1}
+        component={screen}
         name="order History"
         options={{
           headerShown: false,
@@ -95,7 +95,7 @@ const BottomTabNav = () => {
         }}
       />
       <Tab.Screen
-        component={CheckoutPart2}
+        component={screen}
         name="Profile"
         options={{
           headerShown: false,
