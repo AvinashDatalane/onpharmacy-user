@@ -11,10 +11,12 @@ import {
     ImageBackground,
     StyleSheet,
 } from 'react-native';
+import DropShadow from "react-native-drop-shadow";
 import styles from './SignupStyles';
 // import ImageCarousel from '../../Componenets/imageCarousel';
 //import { signupPage } from '../../data';
 import icons from '../../Assets/Icons/icons';
+
 
 // Main container 
 
@@ -35,42 +37,37 @@ const Signup = (props: Props) => {
                 <Image source={icons.Apollo} style={styles.headerIcon} />
                 <Text style={styles.logoText}>Apollo Pharmacy</Text>
             </View>
+            <View style={styles.headerContainer}>
+                <View style={styles.searchBarContainer}>
 
-            <View style={styles.searchBarContainer}>
-                <View style={styles.searchIcon}>
-                    <Image source={icons.searchBlue} />
+                    <Image source={icons.searchBlue} style={styles.searchIcon} />
+
+                    <TextInput
+                        style={styles.searchBarText}
+                        placeholder={'Search Medicines, Healthcare Products & Others'}
+                        placeholderTextColor='#9E9E9E'
+                    />
                 </View>
-                <TextInput
-                    style={styles.searchBar}
-                    placeholder={'Search Medicines, Healthcare Products & Others'}
-                />
-            </View>
-            <View style={styles.locationIcon}>
-                <Image source={icons.locationIcon} style={styles.location} />
-            </View>
-
-            <View style={styles.title}>
-                <Text style={styles.titleText}>Sign in and Checkout</Text>
-            </View>
-            <View style={styles.middleImage}>
-                <Image source={icons.shopping} style={styles.shoppingCart} />
+                <View style={styles.locationIcon}>
+                    <Image source={icons.locationIcon} style={styles.location} />
+                </View>
             </View>
             <View style={styles.middle}>
+                <Text style={styles.titleText}>Sign in and Checkout</Text>
+                <Image source={icons.shopping} style={styles.shoppingCart} />
                 <Text style={styles.middleText}>Login to checkout and purchase</Text>
             </View>
-            <View style={styles.button1}>
-                <TouchableOpacity style={styles.button}>
+
+            <View style={styles.buttons}>
+                <TouchableOpacity style={styles.button1}>
                     <Image source={icons.fb} style={styles.filterIcon} />
                     <Text style={styles.filterText1}>Sign in with Facebook</Text>
                 </TouchableOpacity>
-            </View>
-            <View style={styles.button2}>
-                <TouchableOpacity style={styles.button}>
+                <TouchableOpacity style={styles.button2} onPress={() => { props.navigation.navigate('Personal_Information1') }}>
                     <Image source={icons.googleWhite} style={styles.filterIcon} />
                     <Text style={styles.filterText2}>Sign in with Google</Text>
                 </TouchableOpacity>
             </View>
-
         </View>
     );
 };

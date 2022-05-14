@@ -5,14 +5,16 @@ const styles = StyleSheet.create({
         height: '100%',
         width: '100%',
         alignItems: 'center',
+        backgroundColor: '#FFFFFF',
     },
     headerContainer: {
-        width: '100%',
+
         backgroundColor: '#FFFFFF',
         alignItems: 'center',
+        justifyContent: 'center',
+        flexDirection: 'row',
     },
     header: {
-        //position: 'absolute',
         height: 60,
         width: 325,
         left: -22,
@@ -22,11 +24,11 @@ const styles = StyleSheet.create({
     headerIcon: {
         height: 41.45,
         width: 52,
-        resizeMode: 'contain',
+        resizeMode: 'cover',
     },
     logoText: {
         width: 194,
-        marginLeft: 10,
+        marginLeft: 5,
         fontFamily: 'Rubik',
         fontStyle: 'normal',
         fontWeight: '600',
@@ -34,39 +36,23 @@ const styles = StyleSheet.create({
         lineHeight: 24,
         color: '#000000',
     },
-    carouselContainer: {
-        width: '100%',
-    },
     searchBarContainer: {
         height: 40,
         width: 325,
         left: -15,
-        marginBottom: 10,
         borderRadius: 8,
         borderColor: '#6463F9',
         flexDirection: 'row',
         borderWidth: 1,
-    },
-    filterIcon: {
-        height: 30,
-        width: 20,
-        resizeMode: 'contain',
-    },
-    filtersContainer: {
-        height: 60,
-        left: 14,
-        marginTop: 10,
-        width: '100%',
-        flexDirection: 'row',
-        alignItems: 'center',
         justifyContent: 'space-evenly',
-        backgroundColor: '#70CDAC',
+        alignItems: 'center',
     },
     searchIcon: {
-        height: 36,
-        width: 36,
-        justifyContent: 'center',
-        alignItems: 'center',
+        width: 15,
+        height: 14,
+        left: -5,
+
+
     },
     searchBarText: {
         fontFamily: 'Rubik',
@@ -74,22 +60,22 @@ const styles = StyleSheet.create({
         fontWeight: '400',
         fontSize: 11,
         color: '#9E9E9E',
+        left: -15,
+
     },
-    filterText: {
-        color: 'white',
-        paddingLeft: 3,
-        fontSize: 17,
+    locationIcon: {
+        position: 'relative',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
+
+
     input: {
-        //position: 'absolute',
-        //left: 10,
-        //right: '10%',
-        //top: 23,
-        //bottom: 10,
+        paddingLeft: 15,
         width: 350,
         height: 42,
         marginTop: 5,
-        //background: '#F9F9F9',
+        backgroundColor: '#F9F9F9',
         borderWidth: 1,
         borderStyle: 'solid',
         borderColor: '#D1D1D1',
@@ -97,59 +83,47 @@ const styles = StyleSheet.create({
         color: '#151515'
     },
     inputName: {
-        //position: 'absolute',
-        //left: 10,
-        //right: '10%',
-        //top: 23,
-        //bottom: 10,
         width: 160,
         marginTop: 5,
-        //background: '#F9F9F9',
         borderWidth: 1,
         borderStyle: 'solid',
         borderColor: '#D1D1D1',
         borderRadius: 12,
-        color: '#151515'
+        backgroundColor: '#F9F9F9'
     },
-    inputLastName: {
-        //position: 'absolute',
-        flexDirection: 'row',
-        left: 190,
-        //right: '10%',
-        top: -57,
-        //bottom: 10,
-        width: 160,
-        marginTop: 5,
-        //background: '#F9F9F9',
-        borderWidth: 1,
-        borderStyle: 'solid',
-        borderColor: '#D1D1D1',
-        borderRadius: 12,
-        color: '#151515'
-    },
+
     form: {
         flex: 1,
         padding: 10,
-        //position: 'absolute',
         width: 375,
         height: 767,
-        top: 35,
         backgroundColor: '#FFFFFF',
-        borderRadius: 16.5,
+
+    },
+    titleText: {
+        marginLeft: 22,
+        fontFamily: 'Open Sans',
+        fontStyle: 'normal',
+        fontWeight: '700',
+        fontSize: 22,
+        lineHeight: 30,
+        color: '#000000',
+        marginTop: 18,
+    },
+    middle: {
+        flexDirection: 'column',
+        alignSelf: 'flex-start',
+
     },
     formtextContainer: {
         width: 350,
         height: 18,
         marginTop: 23,
-        left: 12,
+        marginLeft: 12,
     },
     formtext: {
         position: 'absolute',
         height: 18,
-        left: 0,
-        right: 0,
-        top: 0,
-
         fontFamily: 'Poppins',
         fontStyle: 'normal',
         fontWeight: '800',
@@ -157,52 +131,7 @@ const styles = StyleSheet.create({
         lineHeight: 18,
         color: '#151515',
     },
-    fullname: {
-        width: 350,
-        height: 18,
-        left: 12,
-    },
-    fullnameinput: {
-        width: 350,
-        height: 0,
-        marginTop: 5,
-        flex: 1,
-        flexDirection: 'row',
-    },
-    nametextContainer: {
-        width: 160,
-        height: 18,
-        marginTop: 23,
-        left: 12,
-    },
-    nametext: {
-        position: 'absolute',
-        height: 18,
-        left: 0,
-        right: 0,
-        top: 0,
 
-        fontFamily: 'Poppins',
-        fontStyle: 'normal',
-        fontWeight: '800',
-        fontSize: 12,
-        lineHeight: 18,
-        color: '#151515',
-    },
-    lastnametext: {
-        position: 'absolute',
-        height: 18,
-        left: 190,
-        right: 0,
-        top: 0,
-
-        fontFamily: 'Poppins',
-        fontStyle: 'normal',
-        fontWeight: '800',
-        fontSize: 12,
-        lineHeight: 18,
-        color: '#151515',
-    },
     footerContainer: {
         height: 85,
         width: '100%',
@@ -212,7 +141,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#FFFFFF',
     },
     footer: {
-        //position: 'absolute',
         height: 48,
         width: 311,
         justifyContent: 'center',
@@ -231,17 +159,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         color: '#FFFFFF',
     },
-    button: {
-        borderColor: 'white',
-        paddingVertical: 5,
-        alignItems: 'center',
-        height: 40,
-        justifyContent: 'space-evenly',
-        paddingHorizontal: 20,
-        flexDirection: 'row',
-        borderWidth: 1,
-        borderRadius: 20,
-    },
+
     textContainer: {
         height: 50,
         marginTop: 10,
@@ -251,10 +169,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between',
     },
-    headerText: {
-        color: 'black',
-        fontSize: 17,
-    },
+
     storeImage: {
         height: 50,
         width: 60,

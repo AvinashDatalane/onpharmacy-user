@@ -8,16 +8,18 @@ const Screen = () => {
   return <BottomTabNav />;
 };
 
+
 const Router = () => {
   return (
     <Stack.Navigator initialRouteName="BottamTab" screenOptions={{ headerShown: false }}>
       <Stack.Screen component={Screen} name="BottamTab" />
+      <Stack.Screen component={Screen} name="AdminFlow" />
       <Stack.Screen component={Screen} name="userProfile" />
-      <Stack.Screen component={Screen} name="PersonalInfo1" />
-      <Stack.Screen component={Screen} name="PersonalInfo2" />
-      <Stack.Screen component={Screen} name="PersonalInfo3" />
+      <Stack.Screen component={Screen} name="RequestStore" />
+      <Stack.Screen component={Screen} name="NewBranch" />
     </Stack.Navigator>
   );
 };
+
 
 export default Router;

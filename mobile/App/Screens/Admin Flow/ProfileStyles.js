@@ -1,0 +1,141 @@
+import { StyleSheet } from 'react-native';
+
+const styles = StyleSheet.create({
+    mainContainer: {
+        height: '100%',
+        width: '100%',
+        alignItems: 'center',
+        backgroundColor: '#FFFFFF',
+    },
+    loginDesign: {
+        position: 'absolute',
+        width: 160,
+        height: 23,
+        left: 117,
+        top: 280,
+    },
+    topImage: {
+        height: 331,
+        width: 375,
+        marginTop: -50,
+    },
+    welcome: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    bodyText: {
+        //position: 'absolute',
+        flex: 1,
+        alignItems: 'center',
+        width: 200,
+        top: 130,
+        fontFamily: 'Rubik',
+        fontStyle: 'normal',
+        fontWeight: '500',
+        fontSize: 26,
+        lineHeight: 31,
+        textAlign: 'center',
+        letterSpacing: -0.005,
+        color: '#000000',
+    },
+    loginText: {
+        fontFamily: 'Outfit',
+        fontStyle: 'normal',
+        fontWeight: '500',
+        fontSize: 18,
+        lineHeight: 23,
+        textAlign: 'center',
+        color: '#70CDAC',
+    },
+    line1: {
+        position: 'absolute',
+        width: 90,
+        height: 0,
+        left: 23,
+        top: 291.5,
+        borderColor: '#70CDAC',
+        borderWidth: 1,
+        borderStyle: 'solid',
+    },
+    line2: {
+        position: 'absolute',
+        width: 90,
+        height: 0,
+        left: 278,
+        top: 291.5,
+        borderColor: '#70CDAC',
+        borderWidth: 1,
+        borderStyle: 'solid',
+    },
+    filterIcon: {
+        height: 30,
+        width: 20,
+        resizeMode: 'contain',
+    },
+    filterText: {
+        color: 'white',
+        paddingLeft: 10,
+        fontSize: 17,
+    },
+    button: {
+        alignItems: 'center',
+        height: 25,
+        flexDirection: 'row',
+
+    },
+    button1: {
+        position: 'absolute',
+        width: 323,
+        height: 58,
+        left: 29,
+        top: 325,
+        backgroundColor: '#70CDAC',
+        borderRadius: 30,
+        justifyContent: 'space-evenly',
+        alignItems: 'center',
+
+    },
+    button2: {
+        position: 'absolute',
+        width: 323,
+        height: 58,
+        left: 29,
+        top: 403,
+        backgroundColor: '#1877F2',
+        borderRadius: 30,
+        justifyContent: 'space-evenly',
+        alignItems: 'center',
+    },
+
+    header: {
+        height: 60,
+        width: '100%',
+        flexDirection: 'row',
+        alignItems: 'center',
+        backgroundColor: '#FFFFFF',
+        marginTop: 50,
+    },
+    headerIcon: {
+        height: 55,
+        resizeMode: 'contain',
+    },
+    logoText: {
+        width: 85,
+        fontWeight: 'bold',
+        marginLeft: 10,
+    },
+    storeImage: {
+        height: 50,
+        width: 60,
+    },
+    bottomImage: {
+        position: 'absolute',
+        width: 375,
+        height: 361,
+        left: 3,
+        top: 330,
+    },
+});
+
+export default styles;

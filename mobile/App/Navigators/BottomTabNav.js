@@ -3,10 +3,13 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import { View, Text, Image } from 'react-native';
 import Home from '../Screens/Home/Home';
-import Signup from '../Screens/Order History/Signup';
-import Personal_Information1 from '../Screens/Order History/Personal_Information1';
-import Personal_Information2 from '../Screens/Order History/Personal_Information2';
-import Personal_Information3 from '../Screens/Order History/Personal_Information3';
+import Signup from '../Screens/User Profile/Signup';
+import Personal_Information1 from '../Screens/User Profile/Personal_Information1';
+import Personal_Information2 from '../Screens/User Profile/Personal_Information2';
+import Personal_Information3 from '../Screens/User Profile/Personal_Information3';
+import Profile from '../Screens/Admin Flow/Profile';
+import RequestStore from '../Screens/Admin Flow/RequestStore';
+import NewBranch from '../Screens/Admin Flow/NewBranch';
 import icons from '../Assets/Icons/icons';
 import SearchSVG from '../Assets/Icons/BottomTab/search.svg';
 import HomeSVG from '../Assets/Icons/BottomTab/home.svg';
@@ -30,42 +33,44 @@ const userProfile = () => {
   return (
     <Stack.Navigator
       initialRouteName="Signup"
-      screenOptions={{ headerShown: false }}>
+      screenOptions={{ headerShown: false, tabBarVisible: false }}>
       <Stack.Screen component={Signup} name="Signup" />
+      <Stack.Screen component={Personal_Information1} name="Personal_Information1" />
+      <Stack.Screen component={Personal_Information2} name="Personal_Information2" />
+      <Stack.Screen component={Personal_Information3} name="Personal_Information3" />
     </Stack.Navigator>
   );
 };
 
-const PersonalInfo1 = () => {
+const AdminFlow = () => {
   return (
     <Stack.Navigator
-      initialRouteName="Personal_Information1"
-      screenOptions={{ headerShown: false }}>
-      <Stack.Screen component={Personal_Information1} name="Personal Info1" />
+      initialRouteName="Profile"
+      screenOptions={{ headerShown: false, tabBarVisible: false }}>
+      <Stack.Screen component={Profile} name="Profile" />
     </Stack.Navigator>
   );
 };
 
-const PersonalInfo2 = () => {
+const Store = () => {
   return (
     <Stack.Navigator
-      initialRouteName="Personal_Information2"
-      screenOptions={{ headerShown: false }}>
-      <Stack.Screen component={Personal_Information2} name="Personal Info2" />
+      initialRouteName="RequestStore"
+      screenOptions={{ headerShown: false, tabBarVisible: false }}>
+      <Stack.Screen component={RequestStore} name="RequestStore" />
     </Stack.Navigator>
   );
 };
 
-const PersonalInfo3 = () => {
+const Branch = () => {
   return (
     <Stack.Navigator
-      initialRouteName="Personal_Information3"
-      screenOptions={{ headerShown: false }}>
-      <Stack.Screen component={Personal_Information3} name="Personal Info3" />
+      initialRouteName="NewBranch"
+      screenOptions={{ headerShown: false, tabBarVisible: false }}>
+      <Stack.Screen component={NewBranch} name="NewBranch" />
     </Stack.Navigator>
   );
 };
-
 const BottomTabNav = () => {
   // return <View/>
   return (
@@ -92,8 +97,8 @@ const BottomTabNav = () => {
         }}
       />
       <Tab.Screen
-        component={PersonalInfo3}
-        name="Personal Info3"
+        component={AdminFlow}
+        name="AdminFlow"
         options={{
           headerShown: false,
           tabBarVisible: false,
@@ -107,8 +112,8 @@ const BottomTabNav = () => {
         }}
       />
       <Tab.Screen
-        component={PersonalInfo2}
-        name="Personal Info2"
+        component={RequestStore}
+        name="RequestStore"
         options={{
           headerShown: false,
           tabBarVisible: false,
@@ -122,8 +127,8 @@ const BottomTabNav = () => {
         }}
       />
       <Tab.Screen
-        component={PersonalInfo1}
-        name="Personal Info1"
+        component={NewBranch}
+        name="NewBranch"
         options={{
           headerShown: false,
           tabBarVisible: false,
