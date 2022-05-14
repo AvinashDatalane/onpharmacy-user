@@ -11,18 +11,18 @@ import {
 } from 'react-native';
 import styles from './HomeStyles';
 import ImageCarousel from '../../Componenets/imageCarousel';
-import {homePage} from '../../data';
+import { homePage } from '../../data';
 import icons from '../../Assets/Icons/icons';
 
 /**
  * Main container for newsfeed
  */
 
-const store = ({item}) => {
+const store = ({ item }) => {
   return (
     <View>
-      <Image source={{uri: item}} style={styles.storeImageBackground} />
-      <Image source={{uri: item}} style={styles.storeImage} />
+      <Image source={{ uri: item }} style={styles.storeImageBackground} />
+      <Image source={{ uri: item }} style={styles.storeImage} />
     </View>
   );
 };
@@ -48,9 +48,9 @@ const Home = (props: Props) => {
           <Image source={icons.sort} style={styles.filterIcon} />
           <Text style={styles.filterText}>Sort</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => { props.navigation.navigate('Personal_Information3') }}>
           <Image source={icons.location} style={styles.filterIcon} />
-          <Text style={styles.filterText}>Location</Text>
+          <Text style={styles.filterText}>Admin Flow</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button}>
           <Image source={icons.category} style={styles.filterIcon} />

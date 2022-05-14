@@ -48,29 +48,14 @@ const AdminFlow = () => {
       initialRouteName="Profile"
       screenOptions={{ headerShown: false, tabBarVisible: false }}>
       <Stack.Screen component={Profile} name="Profile" />
-    </Stack.Navigator>
-  );
-};
-
-const Store = () => {
-  return (
-    <Stack.Navigator
-      initialRouteName="RequestStore"
-      screenOptions={{ headerShown: false, tabBarVisible: false }}>
       <Stack.Screen component={RequestStore} name="RequestStore" />
-    </Stack.Navigator>
-  );
-};
-
-const Branch = () => {
-  return (
-    <Stack.Navigator
-      initialRouteName="NewBranch"
-      screenOptions={{ headerShown: false, tabBarVisible: false }}>
       <Stack.Screen component={NewBranch} name="NewBranch" />
     </Stack.Navigator>
   );
 };
+
+
+
 const BottomTabNav = () => {
   // return <View/>
   return (
@@ -112,8 +97,8 @@ const BottomTabNav = () => {
         }}
       />
       <Tab.Screen
-        component={RequestStore}
-        name="RequestStore"
+        component={screen}
+        name="Store"
         options={{
           headerShown: false,
           tabBarVisible: false,
@@ -127,8 +112,8 @@ const BottomTabNav = () => {
         }}
       />
       <Tab.Screen
-        component={NewBranch}
-        name="NewBranch"
+        component={screen}
+        name="Order History"
         options={{
           headerShown: false,
           tabBarVisible: false,

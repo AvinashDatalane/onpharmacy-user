@@ -46,7 +46,7 @@ const RequestStore = (props: Props) => {
                     <ScrollView>
                         <StoreDetailsFrom />
                     </ScrollView>
-                    <TouchableOpacity>
+                    <TouchableOpacity onPress={() => { props.navigation.navigate('NewBranch') }}>
                         <View style={styles.footer}>
                             <Text style={styles.footerText}>Request Store</Text>
                         </View>

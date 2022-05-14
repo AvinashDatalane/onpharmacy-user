@@ -33,27 +33,29 @@ const Profile = (props: Props) => {
             <ImageBackground source={icons.bgtop} resizeMode="cover" style={styles.topImage}>
                 <View style={styles.header}>
                     <Image source={icons.onePhamacy} style={styles.headerIcon} />
-                    <Text style={styles.logoText}>One Pharmacy</Text>
+                    <Text style={styles.headerText}>One {'\n'}
+                        Pharmacy</Text>
                 </View>
-                <View style={styles.welcome}><Text style={styles.bodyText}>Welcome to One Pharmacy</Text></View>
+                <View style={styles.body}>
+                    <Text style={styles.bodyText}>Welcome to {'\n'}One Pharmacy</Text>
+                </View>
             </ImageBackground>
-
-            <View style={styles.line1}></View>
             <View style={styles.loginDesign}>
+                <View style={styles.line1}></View>
                 <Text style={styles.loginText}>Log in or Sign up</Text>
+                <View style={styles.line2}></View>
             </View>
-            <View style={styles.line2}></View>
 
-            <View style={styles.button1}>
-                <TouchableOpacity style={styles.button} onPress={() => { props.navigation.navigate('RequestStore') }}>
-                    <Image source={icons.google} style={styles.filterIcon} />
-                    <Text style={styles.filterText}>Sign in with Google</Text>
+
+            <View style={styles.buttons}>
+
+                <TouchableOpacity style={styles.button2} onPress={() => { props.navigation.navigate('RequestStore') }}>
+                    <Image source={icons.googleWhite} style={styles.filterIcon} />
+                    <Text style={styles.filterText2}>Sign in with Google</Text>
                 </TouchableOpacity>
-            </View>
-            <View style={styles.button2}>
-                <TouchableOpacity style={styles.button} onPress={() => { props.navigation.navigate('RequestStore') }}>
+                <TouchableOpacity style={styles.button1} onPress={() => { props.navigation.navigate('RequestStore') }}>
                     <Image source={icons.fb} style={styles.filterIcon} />
-                    <Text style={styles.filterText}>Sign in with Facebook</Text>
+                    <Text style={styles.filterText1}>Sign in with Facebook</Text>
                 </TouchableOpacity>
             </View>
 

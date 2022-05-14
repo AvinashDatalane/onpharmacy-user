@@ -15,8 +15,6 @@ const Router = () => {
       <Stack.Screen component={Screen} name="BottamTab" />
       <Stack.Screen component={Screen} name="AdminFlow" />
       <Stack.Screen component={Screen} name="userProfile" />
-      <Stack.Screen component={Screen} name="RequestStore" />
-      <Stack.Screen component={Screen} name="NewBranch" />
     </Stack.Navigator>
   );
 };

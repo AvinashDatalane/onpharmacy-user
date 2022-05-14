@@ -59,7 +59,7 @@ const Signup = (props: Props) => {
             </View>
 
             <View style={styles.buttons}>
-                <TouchableOpacity style={styles.button1}>
+                <TouchableOpacity style={styles.button1} onPress={() => { props.navigation.navigate('Personal_Information1') }}>
                     <Image source={icons.fb} style={styles.filterIcon} />
                     <Text style={styles.filterText1}>Sign in with Facebook</Text>
                 </TouchableOpacity>
