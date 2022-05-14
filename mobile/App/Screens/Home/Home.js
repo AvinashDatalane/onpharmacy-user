@@ -48,11 +48,11 @@ const Home = (props: Props) => {
           <Image source={icons.sort} style={styles.filterIcon} />
           <Text style={styles.filterText}>Sort</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('Admin')}>
           <Image source={icons.location} style={styles.filterIcon} />
           <Text style={styles.filterText}>Location</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => props.navigation.navigate('PaymentScreen')}>
           <Image source={icons.category} style={styles.filterIcon} />
           <Text style={styles.filterText}>Category</Text>
         </TouchableOpacity>

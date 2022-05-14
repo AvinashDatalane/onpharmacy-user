@@ -11,11 +11,15 @@ const apollo = require('./Apollo.png')
 const searchPurple = require('./search_purple.png')
 const locationPurple = require('./Maps_Purple.png')
 const circleCheck= require('./circleCheck.png')
+const purplecircleCheck= require('./circleCheck_puple.png')
 const dhl= require('./DHL.png')
 const squareCheck= require('./emptySquare.png')
 const creditCard= require('./cards.png')
 const tick= require('./tick.png')
 const fedEx= require('./FedEx.png')
+const bgtop= require('./bgTop.png')
+const bgbottom= require('./bgBottom.png')
+const down= require('./down.png')
 
 const icons = {
   onePhamacy,
@@ -34,6 +38,10 @@ const icons = {
   creditCard,
   tick,
   fedEx,
+  bgtop,
+  bgbottom,
+  purplecircleCheck,
+  down,
 };
 
 export default icons;

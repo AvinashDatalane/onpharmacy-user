@@ -77,6 +77,7 @@ const styles = StyleSheet.create({
     width: 319,
     height: 18,
     marginTop: 23,
+    marginLeft: 12,
   },
   formtext: {
     position: 'absolute',

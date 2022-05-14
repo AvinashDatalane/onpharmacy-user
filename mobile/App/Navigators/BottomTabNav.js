@@ -6,6 +6,7 @@ import CheckoutPart1 from '../Screens/Checkout/CheckoutPart1';
 import CheckoutPart2 from '../Screens/Checkout/CheckoutPart2';
 import CheckoutPart3 from '../Screens/Checkout/CheckoutPart3';
 import CheckoutPart4 from '../Screens/Checkout/CheckoutPart4';
+import Offer from '../Screens/AdminFlow/Offer';
 import icons from '../Assets/Icons/icons';
 import SearchSVG from '../Assets/Icons/BottomTab/search.svg';
 import HomeSVG from '../Assets/Icons/BottomTab/home.svg';
@@ -49,7 +50,7 @@ const BottomTabNav = () => {
         }}
       />
       <Tab.Screen
-        component={CheckoutPart3}
+        component={Offer}
         name="Search"
         options={{
           headerShown: false,

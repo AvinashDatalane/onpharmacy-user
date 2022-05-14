@@ -23,7 +23,7 @@ const CheckoutPart2 = (props: Props) => {
       
       <View style={styles.headerContainer}>
         <View style={styles.header}>
-            <TouchableOpacity style={styles.headerIcon}>
+            <TouchableOpacity style={styles.headerIcon} onPress={() => props.navigation.goBack()}>
                 <Image source={icons.back} />
             </TouchableOpacity>
             <Text style={styles.headerText}>Payment Option</Text>
@@ -50,7 +50,7 @@ const CheckoutPart2 = (props: Props) => {
             </View>
         </View>
       <View style={styles.footerContainer}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => props.navigation.navigate('CheckoutPart3')}>
             <View style={styles.footer}>
                 <Text style={styles.footerText}>Next -></Text>
             </View>

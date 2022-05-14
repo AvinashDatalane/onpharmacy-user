@@ -24,7 +24,7 @@ const CheckoutPart3 = (props: Props) => {
       
       <View style={styles.headerContainer}>
         <View style={styles.header}>
-            <TouchableOpacity style={styles.headerIcon}>
+            <TouchableOpacity style={styles.headerIcon} onPress={() => props.navigation.goBack()}>
                 <Image source={icons.back} />
             </TouchableOpacity>
             <Text style={styles.headerText}>Payment Option</Text>
@@ -69,33 +69,35 @@ const CheckoutPart3 = (props: Props) => {
                   onChangeText={props.handleChange('CardHolder')}
                   value={props.values.FirstName}
                 />
-                <View style={styles.formtextContainer}>
-                    <Text style={styles.formtext}>Expiration Date</Text>
+                <View>
+                  <View style={styles.formtextContainer}>
+                      <Text style={styles.formtext}>Expiration Date</Text>
+                  </View>
+                  <TextInput
+                    style={styles.input}
+                    placeholder='Expiration Date'
+                    placeholderTextColor='#A9A9A9'
+                    onChangeText={props.handleChange('Expiry')}
+                    value={props.values.FirstName}
+                  />
+                  <View style={styles.formtextContainer}>
+                      <Text style={styles.formtext}>CVC</Text>
+                  </View>
+                  <TextInput
+                    style={styles.input}
+                    placeholder='CVC'
+                    placeholderTextColor='#A9A9A9'
+                    onChangeText={props.handleChange('CVC')}
+                    value={props.values.FirstName}
+                    keyboardType='numeric'
+                  />
                 </View>
-                <TextInput
-                  style={styles.input}
-                  placeholder='Expiration Date'
-                  placeholderTextColor='#A9A9A9'
-                  onChangeText={props.handleChange('Expiry')}
-                  value={props.values.FirstName}
-                />
-                <View style={styles.formtextContainer}>
-                    <Text style={styles.formtext}>CVC</Text>
-                </View>
-                <TextInput
-                  style={styles.input}
-                  placeholder='CVC'
-                  placeholderTextColor='#A9A9A9'
-                  onChangeText={props.handleChange('CVC')}
-                  value={props.values.FirstName}
-                  keyboardType='numeric'
-                />
               </View>
             )}
             </Formik>
         </View>
       <View style={styles.footerContainer}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => props.navigation.navigate('CheckoutPart4')}>
             <View style={styles.footer}>
                 <Text style={styles.footerText}>Next -></Text>
             </View>

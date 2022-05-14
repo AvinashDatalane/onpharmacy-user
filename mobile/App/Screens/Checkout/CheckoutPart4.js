@@ -23,7 +23,7 @@ const CheckoutPart4 = (props: Props) => {
       
       <View style={styles.headerContainer}>
         <View style={styles.header}>
-            <TouchableOpacity style={styles.headerIcon}>
+            <TouchableOpacity style={styles.headerIcon} onPress={() => props.navigation.goBack()}>
                 <Image source={icons.back} />
             </TouchableOpacity>
             <Text style={styles.headerText}>Payment Option</Text>
